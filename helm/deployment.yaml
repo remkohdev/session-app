@@ -1,0 +1,32 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: session-app
+  labels:
+    app: session-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: session-app
+  template:
+    metadata:
+      labels:
+        app: session-app
+    spec:
+      serviceAccountName: session-app
+      containers:
+      - name: session-app
+        image: remkohdev/session-app:1.0.0
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 3000
+        env:
+        - name: NODE_ENV
+          value: "dev"
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name

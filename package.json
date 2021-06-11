@@ -1,0 +1,30 @@
+{
+  "name": "session-app",
+  "version": "1.0.0",
+  "description": "session app ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remkohdev/session-app.git"
+  },
+  "keywords": [
+    "session",
+    "express",
+    "cookie"
+  ],
+  "author": "remkohdev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remkohdev/session-app/issues"
+  },
+  "homepage": "https://github.com/remkohdev/session-app#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2"
+  }
+}
