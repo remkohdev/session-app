@@ -36,5 +36,5 @@ curl -b cookies.txt -u "user1:password1" $URL
 chmod +x bulk-requests.sh
 ./bulk-requests.sh > bulk-responses-loadbalancer.txt
 ./bulk-requests.sh > bulk-responses-route.txt
-./bulk-requests.sh > bulk-responses-route-nocookie.txt
+./bulk-requests.sh > bulk-responses-loadbalancer-stateful.txt
 ```

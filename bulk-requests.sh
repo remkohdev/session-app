@@ -1,7 +1,7 @@
 #!/bin/bash
 
-URL=http://<>.us-south.containers.appdomain.cloud
-#URL=http://<>.lb.appdomain.cloud
+#URL=http://<>.us-south.containers.appdomain.cloud
+URL=http://<>.lb.appdomain.cloud
 #URL="$URL/nocookie"
 
 lowerlimit=0
